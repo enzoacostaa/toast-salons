@@ -1,0 +1,23 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html { @apply h-full; }
+	body {
+		@apply min-h-screen bg-slate-900 text-slate-100 antialiased font-sans;
+	}
+	a { @apply text-brand hover:text-brand-300; }
+}
+
+@layer components {
+	.btn-primary {
+		@apply inline-flex items-center gap-2 px-4 py-2 rounded-md bg-brand text-white shadow-md hover:bg-brand-600;
+	}
+}
+
+/* small utilities to guarantee a dark, violet look */
+.card { @apply bg-slate-800/70 border border-slate-700 rounded-lg p-6 shadow-lg; }
+.muted { @apply text-slate-400; }
+
